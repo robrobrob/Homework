@@ -58,9 +58,9 @@ public class Feb82017WedSandL {
                 char exPoint = '!';
                 if(found == exPoint){
                     int index = i;
-                    int indexPlus = i+1;
+                    int indexPlus = i;
                     System.out.println(response.substring(0,i));
-                    System.out.println(response.substring(indexPlus,response.length()));
+                    System.out.println(response.substring(indexPlus+1,response.length()));
                     i = totalContent+1;
                 }
             }
@@ -71,12 +71,13 @@ public class Feb82017WedSandL {
 
     public static void problem3()
     {
+        String output;
         // you get to create the contents of this method
         Scanner input = new Scanner(System.in);
         System.out.println("Enter anything!:");
-        String output = input.nextLine();
+        output = input.nextLine();
         int lengthOfOutput = output.length();
-        char firstLetter = output.charAt(output);
+        char firstLetter = output.charAt(0);
         String first = String.valueOf(firstLetter);
         char lastLetter = output.charAt(output.length());
         String last = String.valueOf(lastLetter);
