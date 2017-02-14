@@ -76,7 +76,7 @@ public class Feb82017WedSandL {
         System.out.println("Enter anything!:");
         String output = input.nextLine();
         int lengthOfOutput = output.length();
-        char firstLetter = output.charAt(output.toCharArray());
+        char firstLetter = output.charAt(output);
         String first = String.valueOf(firstLetter);
         char lastLetter = output.charAt(output.length());
         String last = String.valueOf(lastLetter);
