@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 /*
 *
-* These problems do various tasks
-*
-* @author Robert Hill-Guarino
-* @version Feb 8, 2017
+* @author: Robert
+* @version: 2/16/17
+* @assign.ment: Strings and Strings
+* @descrip.tion: Exercises in Strings. These problems do various tasks in relations to strings.
 */
+
 public class Feb82017WedSandL {
 
     public static void main(String[] args) {
@@ -79,7 +80,7 @@ public class Feb82017WedSandL {
         int lengthOfOutput = output.length();
         char firstLetter = output.charAt(0);
         String first = String.valueOf(firstLetter);
-        char lastLetter = output.charAt(output.length());
+        char lastLetter = output.charAt(output.length()-1);
         String last = String.valueOf(lastLetter);
         System.out.println(lengthOfOutput);
         System.out.println(first);
@@ -88,7 +89,13 @@ public class Feb82017WedSandL {
     }
 
     public static void problem4(){
-
+		String output;
+		System.out.println("Enter text to receive the middle letter:");
+		Scanner scanner = new Scanner(System.in);
+		output = scanner.nextLine();
+		int middle = (output.length()-1)/2;
+		char middleCharacterLetter = output.charAt(middle);
+		System.out.println(middleCharacterLetter);
     }
 
 }
